@@ -1,0 +1,512 @@
+@font-face {
+    font-family: "Monsterrat";
+    src: url("./fonts/Montserrat-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "lyajka";
+    src: url("./fonts/strokerusbylyajka_medium.otf") format("opentype");
+    
+}
+
+body {
+    margin: 0;
+}
+.wrapper_white {
+    margin: 0;
+    margin-right: 60px;
+    padding-left: 60px;
+    color: #003B82; 
+    font-family: "Monsterrat";
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* НАВ БАР */
+.nav__section {
+    position: relative;
+    font-size: 14px;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-blue {
+    position: absolute;
+    left: 45%;
+    
+}
+
+.nav__left-section,
+.nav__right-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 351px;
+    padding: 0;
+    margin: 0;
+}
+.left-section__item {
+    display: flex;
+    align-items: center;
+}
+
+.nav__right-section {
+    width: 536px;
+}
+.left-section__item_link,
+.right-section__item_link {
+    display: flex;
+    text-decoration: none;
+    color: #003B82; 
+    align-items: center;
+}
+.right-section__button-inst:hover,
+.btn-review:hover {
+    box-shadow: 0px 12px 20px rgba(0, 0,0, 0.05);
+    transition: 50ms;
+}
+.item-link__chevron-down {
+    padding-left: 4px;
+}
+
+.right-section__button-inst {
+    display: flex;
+    align-items: center;
+}
+.button-inst__text {
+    font-family: "Monsterrat";
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0;
+    padding-left: 4px;
+}
+.right-section__button-inst {
+    background-color: #003B82;
+    border-style: none;
+    border-radius: 100px;
+    padding: 4px 8px;
+}
+
+/* БЛОК МОЯ ИСТОРИЯ */
+.history {
+    position: relative;
+}
+.tentacle-left-bottom {
+    position: absolute;
+    left: -60px;
+    bottom: 0;
+}
+.tentacle-left-top {
+    position: absolute;
+    left: -60px;
+    top: 0;
+    width: 290px;
+}
+.tentacle-right-top {
+    position: absolute;
+    right: -60px;
+    top: 0;
+}
+.tentacle-right-bottom {
+    position: absolute;
+    right: -60px;
+    bottom: 0;
+    width: 293px;
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+    color: #003B82;
+    font-family: "lyajka";
+    font-weight: 500;
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+}
+.block-history__title {
+    padding-top: 73px;
+    margin-bottom: 25px;
+}
+.line {
+    size: 1px;
+    border-color: #003B82;
+    box-shadow: none;
+    margin: 0;
+}
+.block-history__line {
+    width: 1099px;
+    margin-bottom: 25px;
+    margin: 0;
+    margin: auto;
+}
+.block-history__info_bordered {
+    width: 1014px;
+    margin: auto;
+    margin-bottom: 28px;
+}
+.vertical_line {
+    transform: rotate(180deg);
+    margin: 0;
+}
+.block-history__info {
+    display: flex;
+    max-width: 1014px;
+    justify-content: center;
+    width: 100%;
+}
+
+.block-history_title {
+    display: flex;
+    justify-content:space-between;
+    margin: auto;
+    width: 820px;
+}
+.block-history__text {
+    display: flex;
+    justify-content:space-between;
+    margin: auto;
+    width: 1014px;
+}
+.info__text {
+    font-size: 16px;
+}
+.info__title {
+    font-size: 24px;
+    font-weight: 500;
+}
+.info__scedule {
+    width: 300px;
+    text-align: center;
+    display: inline;
+    vertical-align: middle;
+}
+
+.text1 {
+    font-size: 24px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.scedule1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* БЛОК ФИЛОСОФИЯ */
+.philosophy {
+    margin-bottom: 140px;
+}
+.philosophy__headline {
+    padding-top: 175px;
+}
+.philosophy__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.philosophy__img-octopus {
+    width: 568px;
+    height: 380px;
+}
+.philosophy__text {
+    width: 694px;
+    height: 288px;
+    margin: 0;
+}
+
+/* БЛОК ЦЕННОСТИ И МИССИЯ */
+.mission {
+    position: relative;
+}
+.tentacle-white-left-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tentacle-white-left-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.tentacle-white-right-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.tentacle-white-right-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 255px;
+}
+
+.wrapper_blue {
+    margin: 0;
+    padding-right: 60px;
+    padding-left: 60px;
+    color: white; 
+    background-color: #003B82;
+    font-family: "Monsterrat";
+    font-size: 20px;
+    font-weight: 500;
+}
+.values {
+    background-color: #003B82;
+    color: white;
+    margin: 0;
+    width: 100%;
+}
+.values__headline {
+    padding-top: 80px;
+    margin-bottom: 40px;
+    color: white;
+}
+.values__elem-text {
+    display: flex;
+    justify-content: center;
+}
+.values__text {
+    text-align: center;
+    width: 652px;
+    font-weight: 500;
+    margin-bottom: 80px;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+.values__title-actions {
+    margin-bottom: 80px;
+}
+
+.values__actions_point {
+    display: flex;
+    justify-content: center;
+}
+.values__actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1096px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+.values__actions_point-second-half {
+    padding-left: 20px;
+}
+.values__actions_elem {
+    margin-bottom: 40px;
+}
+.values__title-mission {
+    padding-bottom: 100px;
+    margin-bottom: 140px;
+
+}
+
+/* БЛОК МЕНЮ */
+.menu {
+    position: relative;
+}
+
+.menu-octopus {
+    position: absolute;
+    right: -50px;
+    top: 305px;
+    transform: rotate(-5deg);
+    z-index: -1;
+}
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.bar__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 140px;
+}
+
+/* БЛОК ОТЗЫВЫ */
+.block-reviews__headline {
+    margin-bottom: 80px;
+}
+.reviews__elem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 68px;
+
+}
+.review {
+    width: 650px;
+    height: 222px;
+    box-shadow: 0px 12px 20px rgba(0, 0,0, 0.05);
+
+}
+.review__img {
+    padding-top: 12px;
+}
+.block-reviews__btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 140px;
+}
+.btn-review {
+    color: #003B82; 
+    font-family: "Monsterrat";
+    font-size: 20px;
+    font-weight: 500;
+    background-color: transparent;
+    padding: 20px 60px;
+    border: 3px solid #003B82;   
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    margin: 0;
+}
+
+
+/* БЛОК ШКОЛА */
+.course-price {
+    font-weight: 700;
+    margin-bottom: 0;
+
+}
+.block-school__title {
+    margin-bottom: 80px;
+}
+.school__courses {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    
+}
+.school__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid #003B82;
+    padding: 40px 0px;
+    width: 650px;
+    height: 275px;
+    background-image: url("./images/pattern.png");
+}
+span {
+    font-weight: 700;
+}
+.school__number {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 140px;
+    gap: 10px;
+}
+
+
+/* БЛОК ЛОЯЛЬНОСТЬ */
+.block-loyalty-system {
+    position: relative;
+    height: 962px;
+    margin-bottom: 80px;
+}
+
+.block-loyalty-system__headline {
+    margin-bottom: 80px;
+}
+.block-loyalty-system__img {
+    width: 876px;
+    height: 444px;
+    margin-right: 17px;
+    position: absolute;
+    right: 0;
+}
+.block-loyalty-system__text {
+    display: flex;
+    position: absolute;
+    right: 74px;
+    top: 250px;
+}
+.loyalty-system__img-octopus {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+}
+
+/* БЛОК ФРАНШИЗА */
+
+.block-franchise__headline {
+    padding-top: 80px;
+    border-top: 3px solid #003B82;
+    margin-bottom: 40px;
+}
+.block-franchise__text {
+    width: 875px;
+}
+.block-franchise__elem {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+a {
+    text-decoration: none;
+    color: #003B82; 
+}
+.block-franchise__line {
+    margin-bottom: 80px;
+}
+
+/* ПОДВАЛ */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer__inst {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.footer__text {
+    font-size: 16px;
+    margin: 0;
+}
+.info__adress,
+.info__number {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+.footer__info {
+    display: flex;
+    gap: 60px;
+}
+.fortech-text {
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    margin: 0;
+}
+.fortech {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding-top: 12px;
+    margin-bottom: 14px;
+}
