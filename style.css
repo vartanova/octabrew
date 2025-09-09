@@ -10,8 +10,12 @@
 
 body {
     margin: 0;
+    color: #003B82; 
+    font-family: "Monsterrat";
+    font-size: 20px;
+    font-weight: 500;
 }
-.wrapper_white {
+.background_white {
     margin: 0;
     margin-right: 60px;
     padding-left: 60px;
@@ -58,7 +62,6 @@ body {
 .right-section__item_link {
     display: flex;
     text-decoration: none;
-    color: #003B82; 
     align-items: center;
 }
 .right-section__button-inst:hover,
@@ -81,6 +84,7 @@ body {
     font-size: 14px;
     margin: 0;
     padding-left: 4px;
+    text-transform: uppercase;
 }
 .right-section__button-inst {
     background-color: #003B82;
@@ -92,6 +96,7 @@ body {
 /* БЛОК МОЯ ИСТОРИЯ */
 .history {
     position: relative;
+    margin-bottom: 140px;
 }
 .tentacle-left-bottom {
     position: absolute;
@@ -119,17 +124,22 @@ body {
 .headline {
     display: flex;
     justify-content: center;
-    color: #003B82;
     font-family: "lyajka";
     font-weight: 500;
     font-size: 60px;
     text-align: center;
     margin: 0;
     margin-bottom: 40px;
+    text-transform: uppercase;
 }
 .block-history__title {
+    display: flex;
+    justify-content: center;
     padding-top: 73px;
     margin-bottom: 25px;
+}
+.block-history-title{
+    width: 432px;
 }
 .line {
     size: 1px;
@@ -152,12 +162,6 @@ body {
     transform: rotate(180deg);
     margin: 0;
 }
-.block-history__info {
-    display: flex;
-    max-width: 1014px;
-    justify-content: center;
-    width: 100%;
-}
 
 .block-history_title {
     display: flex;
@@ -173,6 +177,7 @@ body {
 }
 .info__text {
     font-size: 16px;
+    margin: 0;
 }
 .info__title {
     font-size: 24px;
@@ -181,10 +186,10 @@ body {
 .info__scedule {
     width: 300px;
     text-align: center;
-    display: inline;
-    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
-
 .text1 {
     font-size: 24px;
     display: flex;
@@ -198,26 +203,48 @@ body {
 }
 
 /* БЛОК ФИЛОСОФИЯ */
+
 .philosophy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
     margin-bottom: 140px;
 }
 .philosophy__headline {
-    padding-top: 175px;
+    grid-column: 1/3;
 }
-.philosophy__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.tentacle-left-top2 {
+    display: none;
 }
-.philosophy__img-octopus {
-    width: 568px;
-    height: 380px;
+
+@media screen and (max-width:375px) {
+    .philosophy {
+        grid-template-columns: 1fr;
+        width: 340px;
+
+
+    }
+    .philosophy__headline {
+        grid-column: 1;
+        width: 340px;
+
+    }
+    .philosophy__img {
+        grid-row: 1;
+    }
+    .philosophy__img img {
+        margin-bottom: 60px;
+
+        width: 430px;
+    }
+    .philosophy__text-elem {
+        font-size: 16px;
+        width: 340px;
+        margin-bottom: 75px;
+
+    }
 }
-.philosophy__text {
-    width: 694px;
-    height: 288px;
-    margin: 0;
-}
+
 
 /* БЛОК ЦЕННОСТИ И МИССИЯ */
 .mission {
@@ -245,7 +272,7 @@ body {
     width: 255px;
 }
 
-.wrapper_blue {
+.background_blue {
     margin: 0;
     padding-right: 60px;
     padding-left: 60px;
@@ -276,6 +303,9 @@ body {
     font-weight: 500;
     margin-bottom: 80px;
 }
+.values__text_bold {
+    font-weight: 700;
+}
 .title {
     display: flex;
     justify-content: center;
@@ -287,30 +317,134 @@ body {
     margin-bottom: 80px;
 }
 
-.values__actions_point {
-    display: flex;
-    justify-content: center;
-}
 .values__actions {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
     max-width: 1096px;
     margin: 0 auto;
     padding-bottom: 80px;
 }
-.values__actions_point-second-half {
-    padding-left: 20px;
-}
 .values__actions_elem {
-    margin-bottom: 40px;
+    width: 538px;
+    height: fit-content;
 }
+.grid-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 20px;
+    padding-left: 0;
+}
+
+.grid-list li:nth-child(1) { grid-column: 1; grid-row: 1; }
+.grid-list li:nth-child(2) { grid-column: 1; grid-row: 2; }
+.grid-list li:nth-child(3) { grid-column: 1; grid-row: 3; }
+
+.grid-list li:nth-child(4) { grid-column: 2; grid-row: 1; }
+.grid-list li:nth-child(5) { grid-column: 2; grid-row: 2; }
+.grid-list li:nth-child(6) { grid-column: 2; grid-row: 3; }
+
+
 .values__title-mission {
     padding-bottom: 100px;
     margin-bottom: 140px;
 
 }
+@media screen and (max-width: 375px) {
+    /* БЛОК ЦЕННОСТИ И МИССИЯ */
+    .mission {
+        position: relative;
+    }
+    .tentacle-white-left-top {
+        display: none;
+    }
+    .tentacle-white-left-bottom {
+        display: none;
+    }
+    .tentacle-white-right-top {
+        display: none;
+    }
+    .tentacle-white-right-bottom {
+        display: none;
+    }
+    .background_blue {
+        margin: 0;
+        padding: 0;
+        margin-right: 16px;
+        padding-left: 16px;
+        color: white; 
+        background-color: #003B82;
+        font-family: "Monsterrat";
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .values {
+        /* background-color: #003B82;
+        color: white; */
+        margin: 0;
+        width: 100%;
+    }
+    .headline {
+        display: flex;
+        justify-content: center;
+        color: #003B82;
+        font-family: "lyajka";
+        font-weight: 500;
+        font-size: 40px;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+    }
+    .values__headline {
+        padding-top: 80px;
+        margin-bottom: 20px;
+        color: white;
+    }
+    .values__elem-text {
+        display: flex;
+        justify-content: center;
+    }
+    .values__text {
+        font-size: 16px;
+        text-align: center;
+        width: 343px;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+    .title {
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .values__title-actions {
+        margin-bottom: 40px;
+    }
 
+    .values__actions {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        row-gap: 16px;
+        width: 343px;
+        padding-left: 16px;
+    }
+    
+    .grid-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px ;
+        width: 343px;
+      }
+    .values__actions_elem {
+        width: auto;
+    }
+    .values__title-mission {
+        display: none;
+    }
+    ol {
+        margin: 0;
+    }
+}
 /* БЛОК МЕНЮ */
 .menu {
     position: relative;
@@ -369,21 +503,13 @@ body {
     padding: 20px 60px;
     border: 3px solid #003B82;   
 }
-h2 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-weight: 500;
-    font-size: 32px;
-    margin: 0;
-}
+
 
 
 /* БЛОК ШКОЛА */
 .course-price {
     font-weight: 700;
     margin-bottom: 0;
-
 }
 .block-school__title {
     margin-bottom: 80px;
@@ -393,6 +519,16 @@ h2 {
     justify-content: space-between;
     margin-bottom: 40px;
     
+}
+.cards_item {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+    padding-left: 110px;
+    padding-right: 110px;
+
+    margin: 0;
 }
 .school__cards {
     display: flex;
@@ -404,18 +540,17 @@ h2 {
     height: 275px;
     background-image: url("./images/pattern.png");
 }
-span {
-    font-weight: 700;
-}
-.school__number {
+
+.school__registration {
     margin: 0;
     display: flex;
     justify-content: center;
     margin-bottom: 140px;
     gap: 10px;
 }
-
-
+.registration_number {
+    font-weight: 700;
+}
 /* БЛОК ЛОЯЛЬНОСТЬ */
 .block-loyalty-system {
     position: relative;
@@ -437,14 +572,94 @@ span {
     display: flex;
     position: absolute;
     right: 74px;
-    top: 250px;
+    top: 235px;
 }
 .loyalty-system__img-octopus {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 0; 
+}
+
+.block-loyalty-system__text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 762px;
+}
+.block-loyalty-system__point-1 {
+    
+    width: 540px;
+}
+.block-loyalty-system__point-2 {
     
 }
+.block-loyalty-system__point-3 {
+    
+    width: 597px;
+}
+.text__one-rub {
+    grid-column: 2;
+    grid-row: 1/4;
+    width: 187px;
+}
+.block-loyalty-system__img_mini {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 375px) {
+    .block-loyalty-system__img {
+        display: none;
+    }
+    .loyalty-system__img-octopus {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 303px;
+    }
+    .block-loyalty-system__img_mini {
+        visibility: visible;
+        width: 343px;
+        height: 460px;
+    }
+    .block-loyalty-system__text {
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+        left: 40px;
+        width: 296px;
+        font-size: 16px;
+    }
+    .block-loyalty-system__point-1 {
+        width: 296px;
+
+    }
+    .block-loyalty-system__point-2 {
+        width: 296px;
+
+    }
+    .block-loyalty-system__point-3 {
+
+        width: 296px;
+
+    }
+    p {
+        margin: 0;
+    }
+    .text__one-rub {
+        grid-column: 1;
+        grid-row: 2/3;
+
+    }
+    .text__one-rub h2 {
+        font-size: 20px;
+        justify-content: left;
+    }
+}
+
+
+
+
+
+
+
 
 /* БЛОК ФРАНШИЗА */
 
@@ -461,6 +676,12 @@ span {
     justify-content: center;
     margin-bottom: 80px;
 }
+.text_number {
+    text-decoration: underline;
+}
+span {
+    font-weight: 700;
+}
 a {
     text-decoration: none;
     color: #003B82; 
@@ -470,32 +691,56 @@ a {
 }
 
 /* ПОДВАЛ */
+
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 60px;
+  background-color: #003b84; /* пример */
+  color: white;
+  gap: 40px;
 }
+
+.footer__logo {
+    justify-self: start;
+}
+
+.white-logo {
+    width: 260px;
+
+}
+
 .footer__inst {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+    justify-self: center;
+    text-align: center;
 }
-.footer__text {
-    font-size: 16px;
-    margin: 0;
-}
-.info__adress,
-.info__number {
-    display: flex;
-    flex-direction: column;
-    gap: 26px;
-}
+
+
 .footer__info {
     display: flex;
-    gap: 60px;
+    flex-direction: column;
+    justify-self: end;
+    gap: 20px;
 }
+
+.info_item {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+}
+.info_phone {
+    color: white;
+}
+.info_adress, .info_phone {
+    margin: 0;
+  font-size: 16px;
+}
+
+
 .fortech-text {
     font-weight: 600;
     font-size: 18px;
@@ -509,4 +754,324 @@ a {
     align-items: center;
     padding-top: 12px;
     margin-bottom: 14px;
+}
+@media screen and (max-width: 375px) {
+    body {
+    margin: 0;
+    
+    color: #003B82; 
+    font-family: "Monsterrat";
+    font-size: 16px;
+    font-weight: 500;
+    }
+    
+    .background_white {
+    margin: 0;
+    margin-right: 16px;
+    padding-left: 16px;
+    color: #003B82; 
+    font-family: "Monsterrat";
+    font-size: 20px;
+    font-weight: 500;
+}
+    .logo-blue {
+    position: absolute;
+    left: 0;
+    width: 120px;
+    }
+    .tentacle-left-bottom {
+        display: none;
+    }
+    
+    .tentacle-right-top {
+        display: none;
+    }
+    .tentacle-right-bottom {
+        display: none;
+    }
+    .tentacle-left-top {
+        display: none;
+    }
+
+    
+    .block-history__title {
+        display: flex;
+        justify-content: center;
+        width: 288px;
+        margin: auto;
+        padding-top: 40px;
+    }
+    .block-history-title {
+        width: 100%;
+    }
+    .line {
+        size: 1px;
+        border-color: #003B82;
+        box-shadow: none;
+        margin: 0;
+    }
+    .block-history__line {
+        display: none;
+    }
+    .info__text {
+        display: none;
+    }
+    
+    .title-adress,
+    .title-phone {
+        display: none;
+    }
+    .block-history__info_bordered {
+        display: flex;
+        gap: 40px;
+        width: 343px;
+        margin: 0;
+    }
+    .block-history {
+        position: relative;
+    }
+    .right-section__button-inst {
+        /* position: absolute;
+        top: 300px;
+        left: 0; */
+        visibility: hidden;
+    }
+    .vertical_line {
+        display: none;
+    }
+
+    .block-history__text {
+        display: flex;
+        justify-content:space-between;
+        margin: auto;
+        width: 1014px;
+    }
+
+    
+    .info__scedule {
+        width: 300px;
+        text-align: center;
+        display: inline;
+        vertical-align: middle;
+    }
+
+    .text1 {
+        visibility: visible;
+        
+    }
+    .scedule1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+     /* БЛОК МЕНЮ */
+     .menu {
+        position: relative;
+    }
+
+    .menu-octopus {
+        display: none;
+    }
+    .menu__list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+
+    .bar__list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 140px;
+    }
+
+    /* БЛОК ОТЗЫВЫ */
+    .block-reviews__headline {
+        margin-bottom: 80px;
+    }
+    .reviews__elem {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 68px;
+
+    }
+    .review {
+        width: 288px;
+        height: 98px;
+        box-shadow: 0px 12px 20px rgba(0, 0,0, 0.05);
+
+    }
+    .review__img {
+        padding-top: 12px;
+    }
+    .block-reviews__btn {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 140px;
+    }
+    .btn-review {
+        color: #003B82; 
+        font-family: "Monsterrat";
+        font-size: 16px;
+        font-weight: 500;
+        background-color: transparent;
+        padding: 16px 40px;
+        border: 3px solid #003B82;   
+    }
+    h2 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-weight: 500;
+        font-size: 32px;
+        margin: 0;
+    }
+
+
+    /* БЛОК ШКОЛА */
+    .course-price {
+        font-weight: 700;
+        margin-bottom: 0;
+
+    }
+    .block-school__title {
+        margin-bottom: 80px;
+    }
+    .school__courses {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        
+    }
+    .school__cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 3px solid #003B82;
+        padding: 20px 0;
+        width: 343px;
+        height: 187px;
+        background-image: url("./images/pattern.png");
+    }
+    span {
+        font-weight: 700;
+    }
+    .cards_item {
+        font-size: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .school__registration {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 16px;
+        gap: 0;
+        margin-bottom: 80px;
+    }
+    /* .school__number {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 140px;
+        gap: 10px;
+    } */
+    
+    
+
+    /* БЛОК ФРАНШИЗА */
+
+    .block-franchise__headline {
+        padding-top: 40px;
+        border-top: 3px solid #003B82;
+    }
+    .block-franchise__text {
+        width: 875px;
+    }
+    .block-franchise__elem {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 40px;
+
+        
+    }
+    .franchise-text {
+        font-size: 16px;
+    }
+    a {
+        text-decoration: none;
+        color: #003B82; 
+    }
+    .block-franchise__line {
+        margin-bottom: 80px;
+    }
+
+    /* ПОДВАЛ */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+        padding: 0;
+        padding-top: 40px;
+    }
+
+    .footer__logo {
+        order: 3;
+        justify-self: center;
+        margin-bottom: 13px;
+
+    }
+    .footer__logo img {
+        width: 152px;
+
+    }
+
+    .footer__inst {
+        order: 1;
+        justify-content: center;
+    }
+
+    .footer__info {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+
+    }
+
+    .info_item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+
+    }
+
+    .info_adress,
+    .info_phone {
+        text-align: center;
+    }
+    .fortech-text {
+        font-weight: 600;
+        font-size: 18px;
+        color: black;
+        margin: 0;
+    }
+    .fortech {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        padding-top: 12px;
+        margin-bottom: 14px;
+    }
+    
 }
