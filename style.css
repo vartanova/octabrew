@@ -1,0 +1,1233 @@
+@font-face {
+    font-family: "Monsterrat";
+    src: url("./fonts/Montserrat-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "lyajka";
+    src: url("./fonts/strokerusbylyajka_medium.otf") format("opentype");
+    
+}
+
+body {
+    margin: 0;
+    color: #003B82; 
+    font-family: "Monsterrat";
+    font-size: 20px;
+    font-weight: 500;
+}
+.background_white {
+    margin: 0;
+    margin-right: 60px;
+    padding-left: 60px;
+    color: #003B82; 
+    font-family: "Monsterrat";
+    font-size: 20px;
+    font-weight: 500;
+}
+label {
+    display: none;
+}
+ul {
+    display: none;
+}
+#burger-toggle {
+    display: none;
+}
+
+
+/* НАВ БАР */
+.nav__section {
+    position: relative;
+    font-size: 14px;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__elem {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.logo-blue {
+    position: absolute;
+    left: 45%;
+}
+
+.nav__left-section,
+.nav__right-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 351px;
+    padding: 0;
+    margin: 0;
+}
+.left-section__item {
+    display: flex;
+    align-items: center;
+}
+
+.nav__right-section {
+    width: 536px;
+}
+.left-section__item_link,
+.right-section__item_link {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+.right-section__button-inst:hover,
+.btn-review:hover {
+    box-shadow: 0px 12px 20px rgba(0, 0,0, 0.05);
+    transition: 50ms;
+}
+.item-link__chevron-down {
+    padding-left: 4px;
+}
+
+.right-section__button-inst {
+    display: flex;
+    align-items: center;
+}
+.button-inst__text {
+    font-family: "Monsterrat";
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0;
+    padding-left: 4px;
+    text-transform: uppercase;
+}
+.right-section__button-inst {
+    background-color: #003B82;
+    border-style: none;
+    border-radius: 100px;
+    padding: 4px 8px;
+}
+
+/* БЛОК МОЯ ИСТОРИЯ */
+.history {
+    position: relative;
+    margin-bottom: 140px;
+}
+.tentacle-left-bottom {
+    position: absolute;
+    left: -60px;
+    bottom: 0;
+}
+.tentacle-left-top {
+    position: absolute;
+    left: -60px;
+    top: 0;
+    width: 290px;
+}
+.tentacle-right-top {
+    position: absolute;
+    right: -60px;
+    top: 0;
+}
+.tentacle-right-bottom {
+    position: absolute;
+    right: -60px;
+    bottom: 0;
+    width: 293px;
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+    font-family: "lyajka";
+    font-weight: 500;
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+.block-history__title {
+    display: flex;
+    justify-content: center;
+    padding-top: 73px;
+    margin-bottom: 25px;
+}
+.block-history-title{
+    width: 432px;
+}
+.line {
+    size: 1px;
+    border-color: #003B82;
+    box-shadow: none;
+    margin: 0;
+}
+.block-history__line {
+    width: 1099px;
+    margin-bottom: 25px;
+    margin: 0;
+    margin: auto;
+}
+.block-history__info_bordered {
+    width: 1014px;
+    margin: auto;
+    margin-bottom: 28px;
+}
+.vertical_line {
+    transform: rotate(180deg);
+    margin: 0;
+}
+
+.block-history_title {
+    display: flex;
+    justify-content:space-between;
+    margin: auto;
+    width: 820px;
+}
+.block-history__text {
+    display: flex;
+    justify-content:space-between;
+    margin: auto;
+    width: 1014px;
+}
+.info__text {
+    font-size: 16px;
+    margin: 0;
+}
+.info__title {
+    font-size: 24px;
+    font-weight: 500;
+}
+.info__scedule {
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.text_time {
+    font-size: 24px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.scedule1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* БЛОК ФИЛОСОФИЯ */
+
+.philosophy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    margin-bottom: 140px;
+    
+    
+}
+.philosophy__headline {
+    grid-column: 1/3;
+}
+.tentacle-left-top2 {
+    display: none;
+}
+
+@media screen and (max-width:375px) {
+    .philosophy {
+        grid-template-columns: 1fr;
+        width: 340px;
+        margin-bottom: 45px;
+    }
+    .philosophy__text {
+        background-image: url("./images/tentacle-opacity.png");
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        padding-bottom: 50px;
+    }
+    .tentacle-left-top2{
+        opacity: 80%;
+    }
+    .philosophy__headline {
+        grid-column: 1;
+        width: 340px;
+    }
+    .philosophy__img {
+        grid-row: 1;
+    }
+    .philosophy__img img {
+        margin-bottom: 60px;
+
+        width: 430px;
+    }
+    .philosophy__text-elem {
+        font-size: 16px;
+        width: 340px;
+    }
+    
+}
+
+
+/* БЛОК ЦЕННОСТИ И МИССИЯ */
+.mission {
+    position: relative;
+}
+.tentacle-white-left-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tentacle-white-left-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.tentacle-white-right-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.tentacle-white-right-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 255px;
+}
+
+.background_blue {
+    margin: 0;
+    padding-right: 60px;
+    padding-left: 60px;
+    color: white; 
+    background-color: #003B82;
+    font-family: "Monsterrat";
+    font-size: 20px;
+    font-weight: 500;
+}
+.values {
+    background-color: #003B82;
+    color: white;
+    margin: 0;
+    width: 100%;
+}
+
+.values__headline {
+    padding-top: 80px;
+    margin-bottom: 40px;
+    color: white;
+}
+.values__elem-text {
+    display: flex;
+    justify-content: center;
+}
+.values__text {
+    text-align: center;
+    width: 652px;
+    font-weight: 500;
+    margin-bottom: 80px;
+}
+.values__text_bold {
+    font-weight: 700;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+.values__title-actions {
+    margin-bottom: 80px;
+}
+
+.values__actions {
+    max-width: 1096px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+.values__actions_elem {
+    width: 538px;
+    height: fit-content;
+}
+.grid-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 20px;
+    padding-left: 0;
+}
+
+.grid-list li:nth-child(1) { grid-column: 1; grid-row: 1; }
+.grid-list li:nth-child(2) { grid-column: 1; grid-row: 2; }
+.grid-list li:nth-child(3) { grid-column: 1; grid-row: 3; }
+
+.grid-list li:nth-child(4) { grid-column: 2; grid-row: 1; }
+.grid-list li:nth-child(5) { grid-column: 2; grid-row: 2; }
+.grid-list li:nth-child(6) { grid-column: 2; grid-row: 3; }
+
+
+.values__title-mission {
+    padding-bottom: 100px;
+    margin-bottom: 140px;
+
+}
+@media screen and (max-width: 375px) {
+    /* БЛОК ЦЕННОСТИ И МИССИЯ */
+    .mission {
+        width: 100%;
+        background-image: url("./images/tentacle-white-opacity.png");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        position: relative;
+    }
+    .tentacle-white-left-top {
+        display: none;
+    }
+    .tentacle-white-left-bottom {
+        display: none;
+    }
+    .tentacle-white-right-top {
+        display: none;
+    }
+    .tentacle-white-right-bottom {
+        display: none;
+    }
+    .background_blue {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-right: 16px;
+        padding-left: 16px;
+        color: white; 
+        background-color: #003B82;
+        font-family: "Monsterrat";
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .values {
+        margin: 0;
+        width: 100%;
+    }
+    .headline {
+        display: flex;
+        justify-content: center;
+        color: #003B82;
+        font-family: "lyajka";
+        font-weight: 500;
+        font-size: 40px;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+    }
+    .values__headline {
+        padding-top: 80px;
+        margin-bottom: 20px;
+        color: white;
+    }
+    .values__elem-text {
+        display: flex;
+        justify-content: center;
+    }
+    .values__text {
+        font-size: 16px;
+        text-align: center;
+        width: 343px;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+    .title {
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .values__title-actions {
+        margin-bottom: 40px;
+    }
+
+    .values__actions {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        row-gap: 16px;
+        width: 343px;
+        padding-left: 16px;
+    }
+    
+    .grid-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px ;
+        width: 343px;
+      }
+    .values__actions_elem {
+        width: auto;
+    }
+    .values__title-mission {
+        display: none;
+    }
+    ol {
+        margin: 0;
+    }
+}
+/* БЛОК МЕНЮ */
+.menu {
+    position: relative;
+    padding-top: 80px;
+}
+
+.menu-octopus {
+    position: absolute;
+    right: -50px;
+    top: 305px;
+    transform: rotate(-5deg);
+    z-index: -1;
+}
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    gap: 20px;
+}
+
+.bar__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 140px;
+    gap: 20px;
+
+}
+
+/* БЛОК ОТЗЫВЫ */
+.block-reviews__headline {
+    margin-bottom: 80px;
+}
+.reviews__elem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 68px;
+}
+.review {
+    width: 650px;
+    height: 222px;
+    box-shadow: 0px 12px 20px rgba(0, 0,0, 0.05);
+}
+.review__img {
+    padding-top: 12px;
+}
+.block-reviews__btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 140px;
+}
+.btn-review {
+    color: #003B82; 
+    font-family: "Monsterrat";
+    font-size: 20px;
+    font-weight: 500;
+    background-color: transparent;
+    padding: 20px 60px;
+    border: 3px solid #003B82;   
+}
+
+
+
+/* БЛОК ШКОЛА */
+.course-price {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.block-school__title {
+    margin-bottom: 80px;
+}
+.school__courses {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    
+}
+.cards_item {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+    padding-left: 110px;
+    padding-right: 110px;
+
+    margin: 0;
+}
+.school__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid #003B82;
+    padding: 40px 0px;
+    width: 650px;
+    height: 275px;
+    background-image: url("./images/pattern.png");
+}
+
+.school__registration {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 140px;
+    gap: 10px;
+}
+.registration_number {
+    font-weight: 700;
+}
+/* БЛОК ЛОЯЛЬНОСТЬ */
+.block-loyalty-system {
+    position: relative;
+    height: 962px;
+    margin-bottom: 80px;
+}
+
+.block-loyalty-system__headline {
+    margin-bottom: 80px;
+}
+.block-loyalty-system__img {
+    width: 876px;
+    height: 444px;
+    margin-right: 17px;
+    position: absolute;
+    right: 0;
+}
+.block-loyalty-system__text {
+    display: flex;
+    position: absolute;
+    right: 74px;
+    top: 275px;
+}
+.loyalty-system__img-octopus {
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+}
+
+.block-loyalty-system__text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 762px;
+}
+.block-loyalty-system__point-1 {
+    
+    width: 540px;
+}
+.block-loyalty-system__point-2 {
+    
+}
+.block-loyalty-system__point-3 {
+    
+    width: 597px;
+}
+.text__one-rub {
+    grid-column: 2;
+    grid-row: 1/4;
+    width: 187px;
+}
+.block-loyalty-system__img_mini {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 375px) {
+    .block-loyalty-system__img {
+        display: none;
+    }
+    .loyalty-system__img-octopus {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 303px;
+    }
+    .block-loyalty-system__img_mini {
+        visibility: visible;
+        width: 343px;
+        height: 460px;
+    }
+    .block-loyalty-system__text {
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+        left: 40px;
+        width: 296px;
+        font-size: 16px;
+    }
+    .block-loyalty-system__point-1 {
+        width: 296px;
+
+    }
+    .block-loyalty-system__point-2 {
+        width: 296px;
+
+    }
+    .block-loyalty-system__point-3 {
+
+        width: 296px;
+
+    }
+    p {
+        margin: 0;
+    }
+    .text__one-rub {
+        grid-column: 1;
+        grid-row: 2/3;
+
+    }
+    .text__one-rub h2 {
+        font-size: 20px;
+        justify-content: left;
+    }
+}
+
+
+
+
+
+
+
+
+/* БЛОК ФРАНШИЗА */
+
+.block-franchise__headline {
+    padding-top: 80px;
+    border-top: 3px solid #003B82;
+    margin-bottom: 40px;
+}
+.block-franchise__text {
+    width: 875px;
+}
+.block-franchise__elem {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.text_number {
+    text-decoration: underline;
+}
+span {
+    font-weight: 700;
+}
+a {
+    text-decoration: none;
+    color: #003B82; 
+}
+.block-franchise__line {
+    margin-bottom: 80px;
+}
+
+/* ПОДВАЛ */
+
+.footer {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 60px;
+  background-color: #003b84; /* пример */
+  color: white;
+  gap: 40px;
+}
+
+.footer__logo {
+    justify-self: start;
+}
+
+.white-logo {
+    width: 260px;
+
+}
+
+.footer__inst {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-self: center;
+    text-align: center;
+}
+
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    gap: 20px;
+}
+
+.info_item {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+}
+.info_phone {
+    color: white;
+}
+.info_adress, .info_phone {
+    margin: 0;
+  font-size: 16px;
+}
+
+
+.fortech-text {
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    margin: 0;
+}
+.fortech {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding-top: 12px;
+    margin-bottom: 14px;
+}
+@media screen and (max-width: 375px) {
+    body {
+    margin: 0;
+    
+    color: #003B82; 
+    font-family: "Monsterrat";
+    font-size: 16px;
+    font-weight: 500;
+    }
+    
+    .background_white {
+    margin: 0;
+    margin-right: 16px;
+    padding-left: 16px;
+    color: #003B82; 
+    font-family: "Monsterrat";
+    font-size: 20px;
+    font-weight: 500;
+    }
+    .nav__section {
+        width: 100%;
+    }
+    nav {
+        height: 40px;
+    }
+    .logo-blue {
+    position: absolute;
+    left: 0;
+    top: -20px;
+    width: 120px;
+    }
+
+    .nav__left-section,
+    .nav__right-section {
+        visibility: hidden;
+    }
+
+
+
+    .tentacle-left-bottom {
+        display: none;
+    }
+    
+    .tentacle-right-top {
+        display: none;
+    }
+    .tentacle-right-bottom {
+        display: none;
+    }
+    .tentacle-left-top {
+        display: none;
+    }
+
+    
+    .block-history__title {
+        display: flex;
+        justify-content: center;
+        width: 288px;
+        margin: auto;
+        padding-top: 40px;
+    }
+    .block-history-title {
+        width: 100%;
+    }
+    .line {
+        size: 1px;
+        border-color: #003B82;
+        box-shadow: none;
+        margin: 0;
+    }
+    .block-history__line {
+        display: none;
+    }
+    .info__text {
+        display: none;
+    }
+    
+    .title-adress,
+    .title-phone {
+        display: none;
+    }
+    .block-history__info_bordered {
+        display: flex;
+        gap: 40px;
+        width: 343px;
+        margin: 0;
+    }
+    .title-everyday,
+    .text_time {
+        display: inline-flex;
+        
+        left: 0;
+        font-size: 24px;
+    }
+
+    .block-history {
+        position: relative;
+    }
+    .right-section__button-inst {
+        
+        visibility: hidden;
+    }
+    .vertical_line {
+        display: none;
+    }
+    .block-history__info_bordered {
+        width: 343px;
+    }
+    .block-history__text {
+        display: flex;
+        justify-content: left;
+        text-align: left;
+        margin: auto;
+        width: 158px;
+    }
+    
+    .info__scedule {
+        display: none;
+    }
+
+    .text_time {
+        visibility: visible;
+        
+    }
+    .scedule1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+     /* БЛОК МЕНЮ */
+     .menu {
+        position: relative;
+    }
+
+    .menu-octopus {
+        display: none;
+    }
+    .menu__list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+
+    .bar__list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 140px;
+    }
+
+    /* БЛОК ОТЗЫВЫ */
+    .block-reviews__headline {
+        margin-bottom: 40px;
+    }
+    .reviews__elem {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        gap: 20px;
+        height: 111px;
+    }
+    .review {
+        height: 98px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 12px 20px rgba(0, 0,0, 0.05);
+    }
+    .review__img {
+        width: 288px;
+        padding-top: 12px;
+    }
+    .block-reviews__btn {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 80px;
+    }
+    .btn-review {
+        color: #003B82; 
+        font-family: "Monsterrat";
+        font-size: 16px;
+        font-weight: 500;
+        background-color: transparent;
+        padding: 16px 40px;
+        border: 3px solid #003B82;   
+    }
+    h2 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-weight: 500;
+        font-size: 32px;
+        margin: 0;
+    }
+
+
+    /* БЛОК ШКОЛА */
+    .course-price {
+        font-weight: 700;
+        margin-bottom: 0;
+
+    }
+    .block-school__title {
+        margin-bottom: 80px;
+    }
+    .school__courses {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        
+    }
+    .school__cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 3px solid #003B82;
+        padding: 20px 0;
+        width: 343px;
+        height: 187px;
+        background-image: url("./images/pattern.png");
+    }
+    span {
+        font-weight: 700;
+    }
+    .cards_item {
+        font-size: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .school__registration {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 16px;
+        gap: 0;
+        margin-bottom: 80px;
+    }
+    /* .school__number {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 140px;
+        gap: 10px;
+    } */
+    
+    
+
+    /* БЛОК ФРАНШИЗА */
+
+    .block-franchise__headline {
+        padding-top: 40px;
+        border-top: 3px solid #003B82;
+    }
+    .block-franchise__text {
+        width: 875px;
+    }
+    .block-franchise__elem {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 40px;
+
+        
+    }
+    .franchise-text {
+        font-size: 16px;
+    }
+    a {
+        text-decoration: none;
+        color: #003B82; 
+    }
+    .block-franchise__line {
+        margin-bottom: 80px;
+    }
+
+    /* ПОДВАЛ */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+        padding: 0;
+        padding-top: 40px;
+    }
+
+    .footer__logo {
+        order: 3;
+        justify-self: center;
+        margin-bottom: 13px;
+
+    }
+    .footer__logo img {
+        width: 152px;
+
+    }
+
+    .footer__inst {
+        order: 1;
+        justify-content: center;
+    }
+
+    .footer__info {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+
+    }
+
+    .info_item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+
+    }
+
+    .info_adress,
+    .info_phone {
+        text-align: center;
+    }
+    .fortech-text {
+        font-weight: 600;
+        font-size: 18px;
+        color: black;
+        margin: 0;
+    }
+    .fortech {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        padding-top: 12px;
+        margin-bottom: 14px;
+    }
+    
+}
+
+@media (max-width: 375px) {
+    
+    label {
+      position: relative;
+      display: block;
+      top: 10px;
+      right: 10px;
+      color: #003B82;
+      height: 24px;
+      width: 24px;
+    }
+    ul {
+        gap: 16px;
+    }
+    label::after, label::before, label span {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      border-radius: 3px;
+      background-color: #003B82;
+      transition: .2s;
+    }
+    label {
+        position: absolute;
+        right: 16px;
+        top: 0px;
+    }
+    
+    label::before {
+      content: "";
+      top: 0;
+
+    }
+  
+    label::after {
+      content: "";
+      bottom: 0;
+    }
+  
+    label span {
+      top: 10px;
+    }
+  
+    #burger-toggle:checked ~ label::after {
+      transform: rotate(45deg);
+      bottom: 10px;
+      background-color: red;
+    }
+  
+    #burger-toggle:checked ~ label::before {
+      transform: rotate(-45deg);
+      top: 12px;
+      background-color: red;
+
+    }
+  
+    #burger-toggle:checked ~ label span {
+      transform: rotate(-45deg);
+      top: 12px;
+      background-color: red;
+
+    }
+    nav {
+        display: flex;
+        padding-top: 40px;
+        justify-content: flex-end;
+        width: 359px;
+        
+    }
+    .nav__section {
+        height: auto;
+    }
+    .nav__left-section{
+      position: absolute;
+      top: 0;
+      background-color: #003B82;
+      width: 375px;
+      padding-top: 65px;
+      padding-left: 16px;
+      padding-bottom: 40px;
+      z-index: 9999;
+      flex-direction: column;
+      align-items: flex-start;
+  
+      left: -100vh;
+      right: 100vh;
+  
+    }
+    .item_link {
+        color: white;
+    }
+    
+        
+    li a {
+        font-size: 24px;
+    }
+
+    #burger-toggle:checked ~ .nav__elem {
+        display: block;
+        left: 0;
+        right: 0;
+    }
+}
+
