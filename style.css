@@ -912,6 +912,7 @@ a {
         width: 95%;
         margin: auto;
         margin-bottom: 28px;
+        padding-right: 20px;
     }
     .vertical_line {
         transform: rotate(180deg);
@@ -922,6 +923,7 @@ a {
         justify-content:space-around;
         width: 100%;
     }
+    
     .block-history__text {
         width: 100%;
     }
@@ -1089,18 +1091,20 @@ a {
         margin-bottom: 6%;
     }
     
-    .block-history__title {
+    /* .block-history__title {
         display: flex;
         justify-content: center;
         width: 100%;
         margin: auto;
         padding-top: 40px;
-    }
+    } */
     .block-history-title {
+        justify-content: center;
         width: 100%;
         margin-inline-end: 20px;
         padding-left: 20px;
     }
+    
     .line {
         size: 1px;
         border-color: #003B82;
@@ -1551,6 +1555,14 @@ a {
         padding-top: 12px;
         margin-bottom: 14px;
     }
+    .block-history__info_bordered {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: auto;
+        /* gap: 10%; */
+        margin: 0;
+    }
     
 }
 
@@ -1617,13 +1629,13 @@ a {
     }
 
     
-    .block-history__title {
+    /* .block-history__title {
         display: flex;
         justify-content: center;
         width: 100%;
         margin: auto;
         padding-top: 40px;
-    }
+    } */
     .block-history-title {
         width: 100%;
         margin-inline-end: 20px;
@@ -2091,6 +2103,12 @@ a {
         padding-top: 12px;
         margin-bottom: 14px;
     }
+    .block-history__info_bordered {
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+        margin: 0;
+    }
     
 }
 
@@ -2110,7 +2128,7 @@ a {
     padding-left: 16px;
     color: #003B82; 
     font-family: "Monsterrat";
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     }
     .nav__section {
@@ -2148,13 +2166,13 @@ a {
     }
 
     
-    .block-history__title {
+    /* .block-history__title {
         display: flex;
         justify-content: center;
         width: 288px;
         margin: auto;
         padding-top: 40px;
-    }
+    } */
     .block-history-title {
         width: 100%;
     }
@@ -2177,8 +2195,8 @@ a {
     }
     .block-history__info_bordered {
         display: flex;
-        gap: 40px;
-        width: 343px;
+        flex-direction: row;
+        gap: 10%;
         margin: 0;
     }
     .title-everyday,
@@ -2199,9 +2217,7 @@ a {
     .vertical_line {
         display: none;
     }
-    .block-history__info_bordered {
-        width: 343px;
-    }
+    
     .block-history__text {
         display: flex;
         justify-content: left;
@@ -2223,7 +2239,15 @@ a {
         align-items: center;
         justify-content: center;
     }
-    
+    .values {
+        width: 100%;
+    }
+    .values__actions {
+        max-width: 100%;
+    }
+    .grid-list {
+        width: auto;
+    }
      /* БЛОК МЕНЮ */
      .menu {
         position: relative;
@@ -2312,14 +2336,13 @@ a {
         justify-content: space-between;
         border: 3px solid #003B82;
         padding: 20px 0;
-        width: 343px;
-        height: 187px;
+        width: 100%;
         background-image: url("./images/pattern.png");
     }
     span {
         font-weight: 700;
     }
-    .cards_item {
+    .school__cards p {
         font-size: 16px;
         padding-left: 20px;
         padding-right: 20px;
@@ -2334,7 +2357,9 @@ a {
         margin-bottom: 80px;
     }
     
-    
+    .block-loyalty-system__text {
+        left: 10%;
+    }
     
 
     /* БЛОК ФРАНШИЗА */
